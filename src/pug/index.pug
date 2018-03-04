@@ -1,0 +1,119 @@
+doctype html
+
+mixin firstRow
+  div.row.first-row
+    div.cell  Goalscorer Markets
+    div.cell  &#160;
+    div.cell  &#160;
+    div.cell  &#160;
+    div.cell  &#160;
+    div.cell  &#160;
+    div.cell  &#160;
+    div.cell  &#160;
+    
+mixin mainRow(City)
+  div.row.header
+    div.cell.first-cell #{City}
+    div.cell First
+    div.cell Last
+    div.cell Anytime
+    div.cell 2 Or More
+    div.cell Hat-trick
+    div.cell 1st And Last
+    div.cell 1st Or Last
+
+mixin rows
+  div.row
+    div.cell(data-title="player name:")
+      p.bid-name Mario Balotelli
+    div.cell(data-title="First")
+      button.bid-button 4.33
+    div.cell(data-title="Last")
+      button.bid-button 1.83
+    div.cell(data-title="Anytime")
+      button.bid-button 36.00
+    div.cell(data-title="2 Or More")
+      button.bid-button 151.00
+    div.cell(data-title="Hat-trick")
+      button.bid-button 17.00
+    div.cell(data-title="1st And Last")
+      button.bid-button 67.00
+    div.cell(data-title="1st Or Last")
+      button.bid-button 12.00
+
+mixin lastRow
+  div.row.header
+    div.cell &#160;
+    div.cell &#160;
+    div.cell &#160;
+    div.cell &#160;
+    div.cell &#160;
+    div.cell &#160;
+    div.cell &#160;
+    div.cell &#160;
+  div.row
+    div.cell No Scorers
+    div.cell
+      button.bid-button 13.00
+    div.cell &#160;
+    div.cell &#160;
+    div.cell &#160;
+    div.cell &#160;
+    div.cell &#160;
+    div.cell &#160;
+    
+
+html(lang="en")
+    head
+        title Goalscorer Market
+        meta( charset="utf-8" )
+        meta( http-equiv="X-UA-Compatible" content="IE=edge" )
+        meta( name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" )
+        link( href="./../src/assets/css/default.min.css" rel="stylesheet" )
+
+    body
+        div.wrapper
+            div.table
+              +firstRow
+              +mainRow('Liverpool')
+              +rows      
+              +rows
+              +rows
+              +rows
+              +rows
+              +rows
+              +rows
+              +rows
+              +rows
+              +rows
+              +rows
+              +rows
+              +rows
+              +rows
+              +rows
+              +rows
+              +rows
+              +rows
+              +rows
+              +rows
+              +rows
+              +mainRow('Newcastle')
+              +rows
+              +rows
+              +rows
+              +rows
+              +rows
+              +rows
+              +rows
+              +rows
+              +rows
+              +rows
+              +rows
+              +rows
+              +rows
+              +rows
+              +rows
+              +rows
+              +rows
+              +rows
+              +lastRow
