@@ -10,7 +10,7 @@ mixin firstRow
     div.cell  &#160;
     div.cell  &#160;
     div.cell  &#160;
-    
+
 mixin mainRow(City)
   div.row.header
     div.cell.first-cell #{City}
@@ -61,59 +61,59 @@ mixin lastRow
     div.cell &#160;
     div.cell &#160;
     div.cell &#160;
-    
+
 
 html(lang="en")
-    head
-        title Goalscorer Market
-        meta( charset="utf-8" )
-        meta( http-equiv="X-UA-Compatible" content="IE=edge" )
-        meta( name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" )
-        link( href="./../src/assets/css/default.min.css" rel="stylesheet" )
+  head
+    title Goalscorer Market
+    meta( charset="utf-8" )
+    meta( http-equiv="X-UA-Compatible" content="IE=edge" )
+    meta( name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" )
+    link( href="./../src/assets/css/default.min.css" rel="stylesheet" )
 
-    body
-        div.wrapper
-            div.table
-              +firstRow
-              +mainRow('Liverpool')
-              +rows      
-              +rows
-              +rows
-              +rows
-              +rows
-              +rows
-              +rows
-              +rows
-              +rows
-              +rows
-              +rows
-              +rows
-              +rows
-              +rows
-              +rows
-              +rows
-              +rows
-              +rows
-              +rows
-              +rows
-              +rows
-              +mainRow('Newcastle')
-              +rows
-              +rows
-              +rows
-              +rows
-              +rows
-              +rows
-              +rows
-              +rows
-              +rows
-              +rows
-              +rows
-              +rows
-              +rows
-              +rows
-              +rows
-              +rows
-              +rows
-              +rows
-              +lastRow
+  body
+    div.wrapper
+      div.table
+        +firstRow
+        +mainRow('Liverpool')
+        +rows      
+        +rows
+        +rows
+        +rows
+        +rows
+        +rows
+        +rows
+        +rows
+        +rows
+        +rows
+        +rows
+        +rows
+        +rows
+        +rows
+        +rows
+        +rows
+        +rows
+        +rows
+        +rows
+        +rows
+        +rows
+        +mainRow('Newcastle')
+        +rows
+        +rows
+        +rows
+        +rows
+        +rows
+        +rows
+        +rows
+        +rows
+        +rows
+        +rows
+        +rows
+        +rows
+        +rows
+        +rows
+        +rows
+        +rows
+        +rows
+        +rows
+        +lastRow
